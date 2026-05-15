@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Training — Torwart Academy</title>
+  <meta name="description" content="1-on-1 goalkeeper training sessions with Alex Paysse in Brainerd, MN. Single sessions and 6-pack packages available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/torwart-logo-white.png" alt="Torwart Academy" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="nav-logo-text" style="display:none;">Torwart<span class="gold">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="training.html" class="active">Training</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="nav-social">@TorwartAcademy</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="about.html" onclick="closeMobile()">About</a>
+      <a href="training.html" onclick="closeMobile()">Private Training</a>
+      <a href="booking.html" onclick="closeMobile()">Book Now</a>
+      <a href="contact.html" onclick="closeMobile()">Contact</a>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener">@TorwartAcademy ↗</a>
+    </div>
+  </nav>
+
+  <!-- ===== PRIVATE TRAINING ===== -->
+  <section id="training" class="section" style="padding-top: 140px;">
+    <div class="container">
+      <div class="training-intro">
+        <p class="section-label">1-on-1 Sessions</p>
+        <h2 class="section-title">Private Training</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+          Work directly with Alex in focused, individualized sessions. Ages 7–19. Held in Brainerd, MN. Every rep has a purpose.
+        </p>
+      </div>
+
+      <div class="packages-grid" style="grid-template-columns: 1fr 1fr; max-width: 720px;">
+
+        <!-- Single Session -->
+        <div class="package-card">
+          <p class="package-sessions">Flexible</p>
+          <h3 class="package-name">Single Session</h3>
+          <div class="package-price">$30<span style="font-size:1rem;font-weight:600;">/session</span></div>
+          <div class="package-price-sub">90 minutes · pay per session</div>
+          <ul class="package-features">
+            <li>1-on-1 with Alex</li>
+            <li>Fully individualized focus</li>
+            <li>90-minute focused sessions</li>
+            <li>All skill levels, ages 7–19</li>
+            <li>Schedule anytime</li>
+          </ul>
+          <a href="booking.html" class="btn btn-outline" style="width:100%;justify-content:center;font-size:0.8rem;">Book a Session →</a>
+        </div>
+
+        <!-- 6-Session Pack (FEATURED) -->
+        <div class="package-card featured">
+          <div class="featured-tag">Best Value + Free Gloves</div>
+          <p class="package-sessions">Commit &amp; Save</p>
+          <h3 class="package-name">6-Session Pack</h3>
+          <div class="package-price">$200</div>
+          <div class="package-price-sub">6 sessions · best value</div>
+          <ul class="package-features">
+            <li>6 focused 1-on-1 sessions</li>
+            <li>90 minutes per session</li>
+            <li>Progressive GK curriculum</li>
+            <li>Priority scheduling</li>
+            <li>Ongoing feedback between sessions</li>
+          </ul>
+          <div class="glove-reward">🥅 Includes FREE H1 Goalkeeper Gloves</div>
+          <a href="booking.html" class="btn btn-gold" style="width:100%;justify-content:center;font-size:0.8rem;margin-top:16px;">Book the 6-Pack →</a>
+        </div>
+      </div>
+
+      <!-- What We Work On -->
+      <div class="training-focus">
+        <h3>What We Work On</h3>
+        <p>Every session is built around the principles that define elite goalkeepers at every level.</p>
+        <div class="focus-grid">
+          <div class="focus-item"><span class="focus-icon">🧤</span> Shot Stopping</div>
+          <div class="focus-item"><span class="focus-icon">📐</span> Positioning &amp; Angles</div>
+          <div class="focus-item"><span class="focus-icon">⚽</span> Distribution</div>
+          <div class="focus-item"><span class="focus-icon">🔁</span> 1v1 Defending</div>
+          <div class="focus-item"><span class="focus-icon">🧠</span> Decision Making</div>
+          <div class="focus-item"><span class="focus-icon">📣</span> Communication</div>
+          <div class="focus-item"><span class="focus-icon">💪</span> Footwork &amp; Agility</div>
+          <div class="focus-item"><span class="focus-icon">🎯</span> Set Piece Defense</div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top: 64px;">
+        <a href="booking.html" class="btn btn-gold" style="font-size:1rem; padding: 18px 40px;">Reserve Your Session →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">
+              <img src="images/torwart-logo.png" alt="Torwart Academy" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <span class="footer-logo-text" style="display:none;">Torwart<span>.</span></span>
+            </div>
+            <div class="footer-tagline">Command Your Box — Brainerd, MN</div>
+          </div>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="footer-social-wrap">
+            <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="footer-social-link">📸 @TorwartAcademy</a>
+            <a href="tel:2188250807" class="footer-social-link">📞 (218) 825-0807</a>
+            <a href="mailto:towartgkacademy@yahoo.com" class="footer-social-link">📧 towartgkacademy@yahoo.com</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Torwart Academy. All rights reserved.</p>
+          <p class="footer-sponsor">Officially sponsored by <span>H1 Goalkeeper</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

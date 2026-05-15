@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torwart Academy — Command Your Box</title>
+  <meta name="description" content="Elite goalkeeper training by Alex Paysse in Brainerd, MN. Private 1-on-1 sessions. Officially sponsored by H1 Goalkeeper." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/torwart-logo-white.png" alt="Torwart Academy" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="nav-logo-text" style="display:none;">Torwart<span class="gold">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="nav-social">@TorwartAcademy</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="about.html" onclick="closeMobile()">About</a>
+      <a href="training.html" onclick="closeMobile()">Private Training</a>
+      <a href="booking.html" onclick="closeMobile()">Book Now</a>
+      <a href="contact.html" onclick="closeMobile()">Contact</a>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener">@TorwartAcademy ↗</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Official H1 Goalkeeper Training Partner</div>
+        <h1 class="hero-tagline">
+          Command<br><span class="accent">Your Box.</span>
+        </h1>
+        <p class="hero-sub">
+          Elite goalkeeper development with Alex Paysse — ECNL athlete, UPSL semi-pro, and founder of Torwart Academy. Built on German goalkeeper philosophy.
+        </p>
+        <div class="hero-ctas">
+          <a href="booking.html" class="btn btn-gold">Book a Session →</a>
+          <a href="training.html" class="btn btn-outline">View Training</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">ECNL</div>
+            <div class="stat-label">St. Croix 09 Boys</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">UPSL</div>
+            <div class="stat-label">St. Croix Legends</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">H1</div>
+            <div class="stat-label">Official Sponsor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOVE DEAL BANNER ===== -->
+  <div class="glove-banner">
+    <div class="container">
+      <div class="glove-banner-inner">
+        <span class="glove-icon">🥅</span>
+        <p class="glove-text">
+          <strong>FREE H1 Goalkeeper Gloves</strong> — Book the 6-Session Elite Pack and get a free pair of H1 gloves
+        </p>
+        <a href="training.html" class="glove-cta">See the Deal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SPONSOR BAR ===== -->
+  <div class="sponsor-bar">
+    <div class="container">
+      <div class="sponsor-bar-inner">
+        <span class="sponsor-label">Officially Sponsored By</span>
+        <span class="sponsor-divider">|</span>
+        <img src="images/h1-logo.jpg" alt="H1 Goalkeeper" class="sponsor-logo" />
+        <span class="sponsor-name">H1 <span>Goalkeeper</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PHOTO GALLERY STRIP ===== -->
+  <div class="photo-strip">
+    <img src="images/alex-action-new1.jpg" alt="Alex on the pitch" style="object-position: center 30%;" />
+    <img src="images/alex-action-8-crop.jpg" alt="Alex in action" style="object-position: center 20%;" />
+    <img src="images/alex-action-new2.jpg" alt="Alex in action" style="object-position: 25% 35%;" />
+    <img src="images/alex-action-9-crop.jpg" alt="Alex in action" style="object-position: center 20%;" />
+  </div>
+
+  <!-- ===== QUICK LINKS ===== -->
+  <section class="section" style="padding: 80px 0;">
+    <div class="container">
+      <div style="text-align:center; margin-bottom: 48px;">
+        <p class="section-label">Get Started</p>
+        <h2 class="section-title">What Are You Looking For?</h2>
+        <div class="divider" style="margin: 20px auto 0;"></div>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+        <a href="about.html" class="quick-link-card">
+          <div class="qlc-icon">👤</div>
+          <div class="qlc-title">About Alex</div>
+          <div class="qlc-sub">ECNL · UPSL · H1 Goalkeeper athlete</div>
+        </a>
+        <a href="training.html" class="quick-link-card">
+          <div class="qlc-icon">🧤</div>
+          <div class="qlc-title">Training Packages</div>
+          <div class="qlc-sub">Single sessions & 6-pack deals</div>
+        </a>
+        <a href="booking.html" class="quick-link-card gold-card">
+          <div class="qlc-icon">📅</div>
+          <div class="qlc-title">Book a Session</div>
+          <div class="qlc-sub">Reserve your spot online</div>
+        </a>
+        <a href="contact.html" class="quick-link-card">
+          <div class="qlc-icon">📞</div>
+          <div class="qlc-title">Contact</div>
+          <div class="qlc-sub">Questions? Reach out directly</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">
+              <img src="images/torwart-logo.png" alt="Torwart Academy" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <span class="footer-logo-text" style="display:none;">Torwart<span>.</span></span>
+            </div>
+            <div class="footer-tagline">Command Your Box — Brainerd, MN</div>
+          </div>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="footer-social-wrap">
+            <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="footer-social-link">📸 @TorwartAcademy</a>
+            <a href="tel:2188250807" class="footer-social-link">📞 (218) 825-0807</a>
+            <a href="mailto:towartgkacademy@yahoo.com" class="footer-social-link">📧 towartgkacademy@yahoo.com</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Torwart Academy. All rights reserved.</p>
+          <p class="footer-sponsor">Officially sponsored by <span>H1 Goalkeeper</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

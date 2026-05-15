@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Alex Paysse — Torwart Academy</title>
+  <meta name="description" content="Learn about Alex Paysse — ECNL goalkeeper, UPSL semi-pro, and founder of Torwart Academy in Brainerd, MN." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/torwart-logo-white.png" alt="Torwart Academy" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="nav-logo-text" style="display:none;">Torwart<span class="gold">.</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="nav-social">@TorwartAcademy</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="about.html" onclick="closeMobile()">About</a>
+      <a href="training.html" onclick="closeMobile()">Private Training</a>
+      <a href="booking.html" onclick="closeMobile()">Book Now</a>
+      <a href="contact.html" onclick="closeMobile()">Contact</a>
+      <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener">@TorwartAcademy ↗</a>
+    </div>
+  </nav>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section" style="padding-top: 140px;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <img src="images/alex-action-new1.jpg" alt="Alex Paysse — Torwart Academy" class="about-photo" />
+          <div class="about-badge">
+            Torwart<br>Academy<br>Brainerd, MN
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">About the Trainer</p>
+          <h2 class="section-title">Alex Paysse</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Born and raised in Brainerd, Minnesota, Alex Paysse has spent his life mastering the art of goalkeeping — from the fields of central MN to competitive ECNL pitches and the semi-pro stage.
+          </p>
+          <br>
+          <p class="body-text">
+            Alex competes for <strong>St. Croix Soccer Club</strong> — one of the top clubs in the Midwest. At the club level he plays for the <strong>St. Croix 09 Boys</strong> in the <strong>ECNL</strong> (Elite Clubs National League) — the most competitive youth soccer platform in the United States, featuring the best club teams and players in the country.
+          </p>
+          <br>
+          <p class="body-text">
+            Beyond the club game, Alex recently made his semi-pro debut with <strong>St. Croix Legends</strong> in the <strong>UPSL</strong> (United Premier Soccer League), stepping onto the professional pathway while still competing at the elite youth level.
+          </p>
+          <br>
+          <p class="body-text">
+            Torwart Academy was built on a simple idea: goalkeepers deserve specialized, high-level training rooted in real philosophy. "Torwart" — German for goalkeeper — reflects a commitment to the technical precision and mental discipline that defines world-class shot-stoppers.
+          </p>
+          <div class="credentials">
+            <div class="credential-item">
+              <img src="images/ecnl-logo.png" alt="ECNL" class="cred-logo" onerror="this.style.display='none'" />
+              <span>ECNL — Elite Clubs National League</span>
+            </div>
+            <div class="credential-item">
+              <img src="images/stcroix-logo.png" alt="St. Croix SC" class="cred-logo" onerror="this.style.display='none'" />
+              <span>St. Croix Soccer Club — 09 Boys Academy</span>
+            </div>
+            <div class="credential-item">
+              <img src="images/legends-logo.png" alt="St. Croix Legends" class="cred-logo" onerror="this.style.display='none'" />
+              <span>UPSL Semi-Pro — St. Croix Legends</span>
+            </div>
+            <div class="credential-item">
+              <img src="images/h1-logo.jpg" alt="H1 Goalkeeper" class="cred-logo" onerror="this.style.display='none'" />
+              <span>Official H1 Goalkeeper Sponsored Athlete</span>
+            </div>
+            <div class="credential-item">
+              <span class="cred-icon">📍</span>
+              <span>Based in Brainerd, Minnesota</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHOTO GALLERY STRIP ===== -->
+  <div class="photo-strip">
+    <img src="images/alex-action-new1.jpg" alt="Alex on the pitch" style="object-position: center 30%;" />
+    <img src="images/alex-action-8-crop.jpg" alt="Alex in action" style="object-position: center 20%;" />
+    <img src="images/alex-action-new2.jpg" alt="Alex in action" style="object-position: 25% 35%;" />
+    <img src="images/alex-action-9-crop.jpg" alt="Alex in action" style="object-position: center 20%;" />
+  </div>
+
+  <!-- ===== H1 SPONSOR SECTION ===== -->
+  <section id="h1" class="section h1-section">
+    <div class="container">
+      <div class="h1-grid">
+        <div class="h1-logo-wrap">
+          <img src="images/h1-gloves-3.jpg" alt="Alex Paysse in H1 Goalkeeper gloves" class="h1-action-photo" />
+          <img src="images/h1-logo.jpg" alt="H1 Goalkeeper" class="h1-logo-badge" />
+        </div>
+        <div class="h1-content">
+          <p class="section-label">Official Sponsor</p>
+          <h2 class="section-title">H1 Goalkeeper</h2>
+          <div class="divider"></div>
+          <p class="body-text" style="margin-bottom: 16px;">
+            H1 Goalkeeping is a goalkeeper-first glove brand built around one question: <em style="color:var(--white);">what does today's goalkeeper actually need?</em> Every glove starts there — and the answer drives every material, cut, and design decision they make.
+          </p>
+          <p class="body-text" style="margin-bottom: 28px;">
+            Torwart Academy is proud to be an <strong>official H1 Goalkeeper partner</strong>. Alex trains and competes in H1 gloves at the ECNL and UPSL level — and every athlete who books the 6-Session Elite Pack walks away with a <strong>free pair of H1 gloves</strong>.
+          </p>
+
+          <div class="h1-specs">
+            <div class="h1-spec-item">
+              <div class="h1-spec-icon">🇩🇪</div>
+              <div>
+                <div class="h1-spec-title">German Latex Palm</div>
+                <div class="h1-spec-sub">High-grade German latex — unmatched grip and cushioning in all conditions, tested by real keepers on real pitches.</div>
+              </div>
+            </div>
+            <div class="h1-spec-item">
+              <div class="h1-spec-icon">✋</div>
+              <div>
+                <div class="h1-spec-title">Gecko Flat Cut</div>
+                <div class="h1-spec-sub">H1's signature cut combines the roll and flat — maximum glove-to-ball contact with a tight, secure feel on every save.</div>
+              </div>
+            </div>
+            <div class="h1-spec-item">
+              <div class="h1-spec-icon">🔒</div>
+              <div>
+                <div class="h1-spec-title">Full Latex Backhand</div>
+                <div class="h1-spec-sub">Soft German latex molds to your hand over time — creating a second-skin feel and powerful protection on punches.</div>
+              </div>
+            </div>
+            <div class="h1-spec-item">
+              <div class="h1-spec-icon">🎯</div>
+              <div>
+                <div class="h1-spec-title">Tested by Keepers, Built for Keepers</div>
+                <div class="h1-spec-sub">Every glove is tested by real goalkeepers from grassroots to semi-pro before it hits the shelves — or your kitbag.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="h1-glove-cta">
+            <span>🥅</span>
+            <span>Book the <strong>6-Session Elite Pack</strong> → receive FREE H1 Goalkeeper Gloves</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">
+              <img src="images/torwart-logo.png" alt="Torwart Academy" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <span class="footer-logo-text" style="display:none;">Torwart<span>.</span></span>
+            </div>
+            <div class="footer-tagline">Command Your Box — Brainerd, MN</div>
+          </div>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="footer-social-wrap">
+            <a href="https://instagram.com/TorwartAcademy" target="_blank" rel="noopener" class="footer-social-link">📸 @TorwartAcademy</a>
+            <a href="tel:2188250807" class="footer-social-link">📞 (218) 825-0807</a>
+            <a href="mailto:towartgkacademy@yahoo.com" class="footer-social-link">📧 towartgkacademy@yahoo.com</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Torwart Academy. All rights reserved.</p>
+          <p class="footer-sponsor">Officially sponsored by <span>H1 Goalkeeper</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
