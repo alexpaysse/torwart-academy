@@ -70,6 +70,11 @@ document.querySelectorAll('.booking-pkg').forEach(pkg => {
     };
     const step1next = document.getElementById('step1next');
     if (step1next) step1next.disabled = false;
+    // Update hidden form fields
+    const formPkg = document.getElementById('form-package');
+    const formSubject = document.getElementById('form-subject');
+    if (formPkg) formPkg.value = selectedPkg.label;
+    if (formSubject) formSubject.value = `🥅 New Booking: ${selectedPkg.label}`;
   });
 });
 

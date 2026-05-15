@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/towartgkacademy@yahoo.com" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
@@ -125,13 +125,11 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell me about your goalkeeper experience and what you're looking to improve..."></textarea>
           </div>
-          <button type="submit" id="contact-submit-btn" class="btn btn-gold" style="width:100%;justify-content:center;">Send Message →</button>
-          <p id="form-success" style="display:none;color:var(--gold);font-size:0.85rem;text-align:center;font-weight:600;margin-top:8px;">
-            ✓ Message sent! Alex will get back to you soon.
-          </p>
-          <p id="form-error" style="display:none;color:#e05c5c;font-size:0.85rem;text-align:center;font-weight:600;margin-top:8px;">
-            Something went wrong. Please text or email Alex directly at (218) 825-0807.
-          </p>
+          <!-- FormSubmit hidden config -->
+          <input type="hidden" name="_next" value="https://torwartgkacademy.com/thankyou.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="📬 New Contact Message — Torwart Academy" />
+          <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Message →</button>
         </form>
       </div>
     </div>
