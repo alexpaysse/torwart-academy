@@ -93,7 +93,7 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm" action="https://formsubmit.co/towartgkacademy@yahoo.com" method="POST">
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
@@ -125,10 +125,12 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell me about your goalkeeper experience and what you're looking to improve..."></textarea>
           </div>
-          <!-- FormSubmit hidden config -->
-          <input type="hidden" name="_next" value="https://torwartgkacademy.com/thankyou.html" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_subject" value="📬 New Contact Message — Torwart Academy" />
+          <!-- Web3Forms config -->
+          <input type="hidden" name="access_key" value="0c136958-581a-4db1-b562-066bec472d50" />
+          <input type="hidden" name="redirect" value="https://torwartgkacademy.com/thankyou.html" />
+          <input type="hidden" name="subject" value="📬 New Contact Message — Torwart Academy" />
+          <input type="hidden" name="from_name" value="Torwart Academy Website" />
+          <input type="checkbox" name="botcheck" style="display:none;" />
           <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Message →</button>
         </form>
       </div>
