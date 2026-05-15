@@ -16,11 +16,43 @@ function closeMobile() {
 }
 
 // ===== CONTACT FORM =====
-function handleSubmit(e) {
+async function handleContactSubmit(e) {
   e.preventDefault();
+  const form = e.target;
+  const btn = document.getElementById('contact-submit-btn');
   const success = document.getElementById('form-success');
-  if (success) success.style.display = 'block';
-  e.target.reset();
+  const error = document.getElementById('form-error');
+
+  if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
+  if (success) success.style.display = 'none';
+  if (error) error.style.display = 'none';
+
+  const data = {
+    _subject: '📬 New Contact Message — Torwart Academy',
+    Name:     `${form.fname.value.trim()} ${form.lname.value.trim()}`,
+    Email:    form.email.value.trim(),
+    Phone:    form.phone ? form.phone.value : '',
+    Interest: form.interest ? form.interest.value : '',
+    Message:  form.message ? form.message.value : '',
+  };
+
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/towartgkacademy@yahoo.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (res.ok) {
+      if (success) success.style.display = 'block';
+      form.reset();
+    } else {
+      if (error) error.style.display = 'block';
+    }
+  } catch (err) {
+    if (error) error.style.display = 'block';
+  } finally {
+    if (btn) { btn.disabled = false; btn.textContent = 'Send Message →'; }
+  }
 }
 
 // ===== BOOKING SYSTEM =====
@@ -96,15 +128,21 @@ async function submitBooking() {
     });
 
     const success = document.getElementById('booking-success');
-    if (success) success.style.display = 'block';
-
-    // Reset form fields
-    [fname, lname, email, phone, date, player, age, notes].forEach(el => { if (el) el.value = ''; });
-    document.querySelectorAll('.booking-pkg').forEach(p => p.classList.remove('selected'));
-    selectedPkg = null;
+    const errorEl = document.getElementById('booking-error');
+    if (res.ok) {
+      if (success) success.style.display = 'block';
+      if (errorEl) errorEl.style.display = 'none';
+      // Reset form fields
+      [fname, lname, email, phone, date, player, age, notes].forEach(el => { if (el) el.value = ''; });
+      document.querySelectorAll('.booking-pkg').forEach(p => p.classList.remove('selected'));
+      selectedPkg = null;
+    } else {
+      if (errorEl) errorEl.style.display = 'block';
+    }
 
   } catch (err) {
-    alert('Something went wrong. Please text or email Alex directly at (218) 825-0807 or towartgkacademy@yahoo.com');
+    const errorEl = document.getElementById('booking-error');
+    if (errorEl) errorEl.style.display = 'block';
   } finally {
     if (submitBtn) {
       submitBtn.disabled = false;
