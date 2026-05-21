@@ -659,6 +659,144 @@ nav {
 }
 .focus-icon { font-size: 1rem; }
 
+/* ===== SMALL GROUP TRAINING ===== */
+.group-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 44px 40px;
+  margin-bottom: 40px;
+}
+.group-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+.group-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
+.group-sub { color: var(--gray); font-size: 0.95rem; line-height: 1.7; max-width: 500px; }
+.group-price-block {
+  flex-shrink: 0;
+  text-align: right;
+  min-width: 200px;
+}
+.group-price-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 6px;
+}
+.group-price-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.group-price-sub { font-size: 0.75rem; color: var(--gray); }
+.group-perks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+}
+.group-perk { display: flex; gap: 14px; align-items: flex-start; }
+.group-perk-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+.group-perk strong { display: block; font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 5px; }
+.group-perk p { font-size: 0.8rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+@media (max-width: 700px) {
+  .group-section { padding: 32px 24px; }
+  .group-header { flex-direction: column; gap: 24px; }
+  .group-price-block { text-align: left; min-width: unset; }
+  .group-perks { grid-template-columns: 1fr; }
+}
+
+/* ===== SESSION EXPERIENCE ===== */
+.session-experience { margin-top: 56px; margin-bottom: 40px; }
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 0;
+}
+.exp-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 20px;
+  transition: border-color 0.2s;
+}
+.exp-card:hover { border-color: rgba(201,168,76,0.4); }
+.exp-icon { font-size: 1.4rem; margin-bottom: 12px; }
+.exp-title { font-size: 0.92rem; font-weight: 800; margin-bottom: 8px; color: var(--white); }
+.exp-desc { font-size: 0.81rem; color: var(--gray); line-height: 1.65; }
+
+/* ===== GOPRO SECTION ===== */
+.gopro-section {
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a0a 100%);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 14px;
+  padding: 48px 40px;
+  margin-bottom: 24px;
+}
+.gopro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(201,168,76,0.12);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.gopro-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 10px; }
+.gopro-sub { color: var(--gray); font-size: 0.95rem; margin-bottom: 32px; max-width: 540px; line-height: 1.7; }
+.gopro-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.gopro-benefit { display: flex; gap: 14px; align-items: flex-start; }
+.gopro-benefit-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+.gopro-benefit strong { display: block; font-size: 0.88rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.gopro-benefit p { font-size: 0.8rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+/* ===== CUSTOM FOCUS ===== */
+.custom-focus {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 32px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+.custom-focus-icon { font-size: 2rem; flex-shrink: 0; margin-top: 2px; }
+.custom-focus-title { font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+.custom-focus-sub { font-size: 0.85rem; color: var(--gray); line-height: 1.7; max-width: 620px; }
+
+@media (max-width: 900px) {
+  .exp-grid { grid-template-columns: repeat(2, 1fr); }
+  .gopro-benefits { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 600px) {
+  .exp-grid { grid-template-columns: 1fr; }
+  .gopro-section { padding: 32px 24px; }
+  .custom-focus { flex-direction: column; padding: 24px 20px; }
+}
+
 /* ===== CONTACT ===== */
 #contact { background: var(--black); }
 .contact-grid {
